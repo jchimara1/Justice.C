@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>FormLab: Contact</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+</head>
+<body>
+
+<a href="index.html" target="_blank">Home</a>
+<a href="menu.html">Menu</a>
+<a href="#" target="_blank">Now Hiring</a>
+
+<form class="forminfo">
+    <label>First Name:
+        <input type="text" name=fname" placeholder="enter your firstname" id="" required min="1" max="20">
+        <!--    example of another way to make a button in html    <input type="submit" value="milkdud">-->
+    </label>
+    <br>
+
+    <label>Last Name:
+        <input type="text" name=lname" placeholder="enter your lastname" maxlength="5" id="" min="1" max="20" >
+    </label>
+    <br>
+    <label> Address 1:
+        <input type="text" name="address1" placeholder="enter your address" required min="7" max="20">
+    </label>
+    <br>
+    <label> Address 2:
+        <input type="text" name="address2" placeholder="Continue your address" min="7" max="20">
+    </label>
+    </label>
+    <br>
+    <label> City:
+        <input type="text" id = "cityBox" name="city" placeholder="enter your city" min="1" max="30">
+    </label>
+    <label >State:
+
+        <select>
+            <option value="Texas">TX</option>
+            <option value="Miami">MIA</option>
+            <option value="Arizona">AZ</option>
+        </select>
+    </label>
+    <br>
+    <label>Age:
+        <input type="number" name="age" placeholder="please enter your age" min="21" max="99">
+    </label>
+    <br>
+    <label>Phone:
+        <input
+                type="tel"
+                name="tel-phone"
+                id=""
+                title="pattern (XXX-XXX-XXXX)"
+                placeholder="ex.(XXX-XXX-XXXX)"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        >
+    </label>
+    <br>
+    <label>Email:
+        <input type="email" name="email" placeholder="enter your email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+    </label>
+
+    <br>
+    <label>Password:
+        <input type="password"required name="password" placeholder="enter your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@\(!\)!%*#?&]{8,12}$">
+    </label>
+    <br>
+
+    <label>Are you Married?
+        <input type="radio" name="isMarried" value="yes" checked>Yes
+        <input type="radio" name="isMarried" value="no">No
+        <input type="radio" name="isMarried"value="Complicated">Complicated
+    </label>
+    <br>
+    <label>Color:
+        <input type="checkbox" name="color1" value="blue">Blue
+        <input type="checkbox" name="color2" value="Black">Black
+        <input type="checkbox" name="color3" value="Red">Red
+        <input type="checkbox" name="color4" value="Yellow">Yellow
+        <input type="checkbox" name="color4" value="white">white
+    </label>
+    <br>
+    <label>Tell us about yourself
+        <br>
+        <textarea name="tellus" rows="4" cols="100" maxlength="30"></textarea>
+    </label>
+
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
