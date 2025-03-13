@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FormLab: Contact</title>
+</head>
+<body>
+<a href="index.html" target="_blank">Home</a>
+<a href="#" >Contact</a>
+
+<form action="/sendTheData">
+    <label>First Name:
+    <input type="text" name=fname" placeholder="enter your firstname" id="" required>
+<!--    example of another way to make a button in html    <input type="submit" value="milkdud">-->
+    </label>
+    <br>
+
+    <label>Last Name:
+        <input type="text" name=lname" placeholder="enter your lastname" maxlength="5" id="" required>
+
+    </label>
+
+    <br>
+    <label>Email:
+        <input type="email" name="email" placeholder="enter your email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+    </label>
+
+    <br>
+    <label>Phone:
+    <input
+    type="tel"
+    name="tel-phone"
+    id=""
+    title="pattern (XXX-XXX-XXXX)"
+    placeholder="ex.(XXX-XXX-XXXX)"
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+    >
+    </label>
+    <br>
+    <label>Age:
+        <input type="number" name="age" placeholder="please enter your age" min="21" max="100">
+
+    </label>
+
+    <br>
+    <label>Password:
+        <input type="password"required name="password" placeholder="enter your password">
+    </label>
+    <br>
+
+    <label>Are you alive?
+        <input type="radio" name="isAlive" value="yes">Yes
+        <input type="radio" name="isAlive" value="no">No
+        <input type="radio" name="isAlive"value="zombie">Zombie
+    </label>
+    <br>
+
+    <label>Are you Married?
+        <input type="radio" name="isMarried" value="yes">Yes
+        <input type="radio" name="isMarried" value="no">No
+        <input type="radio" name="isMarried"value="Complicated">Complicated
+    </label>
+    <br>
+    <label>Color:
+        <input type="checkbox" name="color1" value="blue">Blue
+        <input type="checkbox" name="color2" value="Black">Black
+        <input type="checkbox" name="color3" value="Red">Red
+        <input type="checkbox" name="color4" value="Yellow">Yellow
+    </label>
+    <br>
+    <label>Tell us about yourself
+        <br>
+    <textarea name="tellus" rows="4" cols="100"></textarea>
+    </label>
+    <br>
+    <label >State:
+
+        <select>
+    <option value="Texas">TX</option>
+    <option value="Miami">MIA</option>
+    <option value="Arizona">AZ</option>
+        </select>
+    </label>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
