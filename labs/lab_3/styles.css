@@ -13,7 +13,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 p{
     text-align: center;
-    backdrop-filter: opacity();
+
 
 }
 
@@ -94,10 +94,12 @@ img
     border-radius: 3px 0 0 3px;
 }
 
-/*/* On hover, add a black background color with a little bit see-through */
-/*.prev:hover, .next:hover {*/
-/*    background-color: rgba(0,0,0,0.8);*/
-/*}*/
+
+.prev:hover, .next:hover {
+    background-color: rgba(242, 242, 242, 0.25);
+}
+
+
 
 
 
@@ -122,13 +124,3 @@ img
     background-color: #717171;
 }
 
-/*!* Fading animation *!*/
-.fade {
-    animation-name: none;
-    animation-duration: 60s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
