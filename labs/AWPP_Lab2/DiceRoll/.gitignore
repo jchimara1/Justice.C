@@ -17,8 +17,26 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+# macOS
+
+
+# node
+node_modules/
+dist/
+.env
+.vite/
+
+
+
+# editor configs
+.vscode/
+.idea/
+
+# system junk
+Thumbs.db
