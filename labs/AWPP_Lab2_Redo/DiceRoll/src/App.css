@@ -60,7 +60,7 @@ i {
 }
 
 body {
-  background-image: url('./assets/img.png');
+  background-image: url('assets/img.png');
   background-size: cover;
   background-position: right;
   background-repeat: repeat;
