@@ -41,3 +41,4 @@ dist/
 # system junk
 Thumbs.db
 .vite/
+.DS_Store
