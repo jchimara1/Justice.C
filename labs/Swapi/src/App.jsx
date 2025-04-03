@@ -34,7 +34,8 @@ function App() {
 
   return (
     <>
-       <h1>SWAPI</h1>
+    <h1>SWAPI</h1>
+      <h1> The Star Wars API</h1>
       {!isLoading && isSubmitted &&(
       <table className="display" >
         <tbody>
